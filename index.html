@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyFirst-React component</title>
+	<script src="https://fb.me/react-0.14.6.js"></script>
+	<script src="https://fb.me/react-dom-0.14.6.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
+</head>
+<body>
+</body>
+
+<script type="text/jsx">
+	//Create React Class
+	var helloWorld = React.createClass({
+		render : function() {
+			return <div> 
+			Hello World! 
+			</div>
+		}
+	})
+
+	// Create React Instance
+	var element = React.createElement(helloWorld);
+
+	// Add the react element to the dom.
+	ReactDOM.render(element, document.body);
+</script>
+</html>
